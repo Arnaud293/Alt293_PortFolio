@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "index.scss",
+        "bases/_settings.scss",
+        "layout/_container.scss",
+        "layout/_card.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
