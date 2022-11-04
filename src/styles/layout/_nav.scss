@@ -5,9 +5,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
     position: fixed;
     z-index: 3;
+    background: black;
 
     & ul{
         display: flex;
@@ -18,6 +18,7 @@ nav{
         & li{
             color: $color1;
             font-family: $font2;
+            font-size: 25px;
         }
     }
 }
