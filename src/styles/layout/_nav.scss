@@ -1,16 +1,23 @@
 nav{
     height: 10vh;
     width: 100vw;
-    background-color: $color1;
+    border-bottom: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    position: fixed;
+    z-index: 3;
 
     & ul{
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: 40%;
+
+        & li{
+            color: $color1;
+            font-family: $font2;
+        }
     }
 }
