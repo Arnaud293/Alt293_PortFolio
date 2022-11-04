@@ -1,0 +1,43 @@
+
+.bubble{
+    position: absolute;
+    top: 15vh;
+    right: 45vh;
+    width: 22%;
+
+    &-text{
+        background: $color1-low;
+        font-family: Bebas-Neue, sans-serif;
+        font-size: 40px;
+        color: #fff;
+        padding: 7px 15px;
+        border-radius: 25px;
+        width: 245px;
+        height: 29vh;
+
+        & span{
+            color: $color2;
+        }
+    
+        & ::after{
+            content:""; 
+	        position: absolute;
+	        bottom: 0;
+	        left: 30%;
+	        width: 0;
+	        height: 0;
+	        border: 76px solid transparent;
+	        border-top-color: $color1-low;
+	        border-bottom: 0;
+	        border-left: 0;
+	        margin-left: -33px;
+	        margin-bottom: -66px;
+            transform: rotate(10deg);
+        }
+    
+    }
+
+}
+
+
+
