@@ -95,6 +95,59 @@ li {
 .about {
   height: 100vh;
   background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-text-container {
+  height: 30vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text-container h1, .about-text-container p {
+  color: white;
+}
+
+.about-text-container h1 {
+  font-family: Bebas-Neue, sans-serif;
+}
+
+.about-text-container p {
+  font-family: Kollektif, sans-serif;
+  margin-top: 60px;
+  font-size: 20px;
+  width: 80%;
+  line-height: 1.8rem;
+}
+
+.about-text-container .background-text {
+  font-family: Bebas-Neue, sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8rem;
+  position: absolute;
+  top: -15%;
+  right: 0%;
+  width: 100%;
+}
+
+.about-bottom-container {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-card {
+  width: 245px;
+  height: 245px;
+  border-radius: 20px;
+  background: #462b73;
 }
 
 nav {
@@ -120,5 +173,9 @@ nav ul li {
   color: #764ABC;
   font-family: Bebas-Neue, sans-serif;
   font-size: 25px;
+}
+
+nav ul li:hover {
+  color: #00D8FF;
 }
 /*# sourceMappingURL=index.css.map */
