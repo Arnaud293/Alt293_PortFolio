@@ -81,4 +81,48 @@
 .about{
     height: 100vh;
     background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &-text-container{
+        height: 30vh;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h1, p{
+            color: white;
+        }
+        & h1{
+            font-family: $font2;
+        }
+        & p{
+            font-family: $font1;
+            margin-top: 60px;
+            font-size: 20px;
+            width: 80%;
+            line-height: 1.8rem;
+        }
+
+        & .background-text{
+            font-family: $font2;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 8rem;
+            position: absolute;
+            top: -15%;
+            right: 0%;
+            width: 100%;
+        }
+    }
+
+    &-bottom-container{
+        display: flex;
+        width: 90vw;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
