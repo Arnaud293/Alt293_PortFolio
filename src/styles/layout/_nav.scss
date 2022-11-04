@@ -19,6 +19,10 @@ nav{
             color: $color1;
             font-family: $font2;
             font-size: 25px;
+
+            &:hover{
+                color: $color2;
+            }
         }
     }
 }
