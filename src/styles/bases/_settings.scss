@@ -1,6 +1,24 @@
-$color1 : #ffffff;
-$color2 : #505050;
+@font-face {
+    font-family: "Bebas-Neue";
+    src: url(/src/assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Kollektif";
+    src: url(/src/assets/Kollektif-Bold.ttf);
+    src: url(/src/assets/Kollektif-BoldItalic.ttf);
+    src: url(/src/assets/Kollektif-Italic.ttf);
+    src: url(/src/assets/Kollektif.ttf);
+}
+
+$font1 : Kollektif, sans-serif;
+$font2 : Bebas-Neue, sans-serif;
+
+
+$color1 : #764ABC;
+$color2 : #00D8FF;
 $color3 : #f3f2f2;
+
+$color1-low: #462b73;
 
 $font-color1: white;
 
