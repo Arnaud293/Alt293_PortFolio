@@ -1,9 +1,48 @@
 .home{
     height: 100vh;
-    background: $color3;
+    background: black;
     font-family: sans-serif;
+    overflow-y: hidden;
 
-    &-main-content{
-        height: 90vh;
+    & #profil-pic{
+        position: relative;
+        bottom: -21vh;
+        left: -15vh;
+        height: 98vh;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    & #js-icon{
+
+        & img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0.4;
+            height: 20vh;
+        }
+    }
+
+    & #redux-icon{
+
+        & img{
+            position: absolute;
+            bottom: 1vh;
+            right: 20vh;
+            opacity: 0.4;
+            height: 25vh;
+        }
+    }
+
+    & #react-icon{
+
+        & img{
+            position: absolute;
+            top: 6vh;
+            left: 0;
+            opacity: 0.4;
+            height: 40vh;
+        }
     }
 }

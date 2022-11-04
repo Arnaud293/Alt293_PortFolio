@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Bebas-Neue";
+  src: url(/src/assets/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url(/src/assets/Kollektif-Bold.ttf);
+  src: url(/src/assets/Kollektif-BoldItalic.ttf);
+  src: url(/src/assets/Kollektif-Italic.ttf);
+  src: url(/src/assets/Kollektif.ttf);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,18 +22,48 @@ li {
 
 .home {
   height: 100vh;
-  background: #f3f2f2;
+  background: black;
   font-family: sans-serif;
+  overflow-y: hidden;
 }
 
-.home-main-content {
-  height: 90vh;
+.home #profil-pic {
+  position: relative;
+  bottom: -21vh;
+  left: -15vh;
+  height: 98vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+.home #js-icon img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+  height: 20vh;
+}
+
+.home #redux-icon img {
+  position: absolute;
+  bottom: 1vh;
+  right: 20vh;
+  opacity: 0.4;
+  height: 25vh;
+}
+
+.home #react-icon img {
+  position: absolute;
+  top: 6vh;
+  left: 0;
+  opacity: 0.4;
+  height: 40vh;
 }
 
 nav {
   height: 10vh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #764ABC;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,5 +75,43 @@ nav ul {
   align-items: center;
   justify-content: space-around;
   width: 40%;
+}
+
+.bubble {
+  position: absolute;
+  top: 15vh;
+  right: 45vh;
+  width: 22%;
+}
+
+.bubble-text {
+  background: #462b73;
+  font-family: Bebas-Neue, sans-serif;
+  font-size: 40px;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 25px;
+  width: 245px;
+  height: 29vh;
+}
+
+.bubble-text span {
+  color: #00D8FF;
+}
+
+.bubble-text ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 0;
+  height: 0;
+  border: 76px solid transparent;
+  border-top-color: #462b73;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -33px;
+  margin-bottom: -66px;
+  transform: rotate(10deg);
 }
 /*# sourceMappingURL=index.css.map */
