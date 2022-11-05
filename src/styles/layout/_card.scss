@@ -3,4 +3,41 @@
     height: 245px;
     border-radius: 20px;
     background: $color1-low;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &-img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 45%;
+        margin-top: 1.2rem;
+
+        & img{
+            height: 90%;
+        }
+    }
+
+    &-text-content{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        & h3, p{
+            color: white;
+        }
+        & h3{
+            font-family: $font2;
+            font-weight: 500;
+        }
+        & p{
+            font-family: $font1;
+        }
+    }
 }

@@ -148,6 +148,44 @@ li {
   height: 245px;
   border-radius: 20px;
   background: #462b73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-card-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 45%;
+  margin-top: 1.2rem;
+}
+
+.about-card-img-container img {
+  height: 90%;
+}
+
+.about-card-text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-card-text-content h3, .about-card-text-content p {
+  color: white;
+}
+
+.about-card-text-content h3 {
+  font-family: Bebas-Neue, sans-serif;
+  font-weight: 500;
+}
+
+.about-card-text-content p {
+  font-family: Kollektif, sans-serif;
 }
 
 nav {
