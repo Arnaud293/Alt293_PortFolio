@@ -79,20 +79,22 @@
 }
 
 .about{
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    border-top: 1px solid white;
 
     &-text-container{
-        height: 30vh;
+        height: 35vh;
         text-align: center;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-bottom: 1px solid white;
 
         & h1, p{
             color: white;
@@ -127,6 +129,36 @@
     }
 }
 
+.project-text-top-container{
+    height: 35vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+    & h1, p{
+        color: white;
+    }
+    & h1{
+        font-family: $font2;
+    }
+
+    & .background-text{
+        font-family: $font2;
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 8rem;
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        width: 100%;
+    }
+}
+
 .projects-container{
     min-height: 80vh;
     background: black;
@@ -141,12 +173,16 @@
 
     &-text-container{
         width: 40%;
+        margin-left: 1rem;
         & h3, p {
             color: white;
         }
         & h2{
             color: $color2;
-            font-size: 2rem;
+            font-size: 2.3rem;
+            line-height: 37px;
+            font-style: italic;
+            font-weight: 500;
         }
         & h2, p{
             font-family: $font1;
@@ -190,13 +226,17 @@
     &-text-container{
         width: 40%;
         text-align: right;
+        margin-right: 1rem;
 
         & h3, p {
             color: white;
         }
         & h2{
-            color: $color2;
-            font-size: 2rem;
+            color: $color1;
+            font-size: 2.3rem;
+            line-height: 37px;
+            font-style: italic;
+            font-weight: 500;
         }
         & h2, p{
             font-family: $font1;
