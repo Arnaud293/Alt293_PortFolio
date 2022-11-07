@@ -132,15 +132,15 @@
     background: black;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr;
 
     &-preview ,&-text-container{
         height: 60vh;
-        width: 50%;
     }
 
     &-text-container{
-
+        width: 40%;
         & h3, p {
             color: white;
         }
@@ -160,6 +160,7 @@
     
 
     &-preview{
+        width: 50%;
         background: $color1-low;
         border-radius: 20px;
     }
@@ -172,22 +173,22 @@
     background: black;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
     grid-template-columns: 1fr 1fr;
 
     &-preview ,&-text-container{
         height: 60vh;
-        width: 50%;
     }
 
     &-preview{
         background: $color2;
         border-radius: 20px;
-        height: 60vh;
+        width: 50%;
     }
 
     &-text-container{
-
+        width: 40%;
         text-align: right;
 
         & h3, p {
