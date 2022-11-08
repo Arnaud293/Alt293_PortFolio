@@ -25,6 +25,19 @@ $font-color1: white;
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+    &::-webkit-scrollbar-track {
+        background: black;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #462b73;
+        border-radius: 5px;
+    }
+
 }
 
 li{

@@ -247,3 +247,72 @@
         }
     }
 }
+
+.contact{
+    min-height: 90vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-top-icons{
+        color: $color1;
+        height: 10vh;
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &-email, &-phone{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1rem;
+            font-family: $font1;
+
+            &:hover{
+                background: $color1;
+                color: black;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        & i{
+            font-size: 25px;
+        }
+    }
+
+    &-form-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 45vw;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        & label{
+            color: white;
+            font-family: $font2;
+        }
+        & input, textarea{
+            width: 100%;
+            min-height: 35px;
+            background: none;
+            resize: none;
+            border: 1px solid $color1;
+            border-radius: 5px;
+            color: white;
+            &::placeholder{
+                color: white;
+                font-family: $font1;
+                opacity: 0.8;
+            }
+        }
+        & textarea{
+            height: 160px;
+        }
+    }
+}

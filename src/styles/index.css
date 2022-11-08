@@ -14,6 +14,20 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 15px;
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background: black;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: #462b73;
+  border-radius: 5px;
 }
 
 li {
@@ -268,6 +282,79 @@ li {
   font-size: 1.5rem;
 }
 
+.contact {
+  min-height: 90vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-top-icons {
+  color: #764ABC;
+  height: 10vh;
+  width: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-top-icons-email, .contact-top-icons-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: Kollektif, sans-serif;
+}
+
+.contact-top-icons-email:hover, .contact-top-icons-phone:hover {
+  background: #764ABC;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-top-icons i {
+  font-size: 25px;
+}
+
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45vw;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-form-container label {
+  color: white;
+  font-family: Bebas-Neue, sans-serif;
+}
+
+.contact-form-container input, .contact-form-container textarea {
+  width: 100%;
+  min-height: 35px;
+  background: none;
+  resize: none;
+  border: 1px solid #764ABC;
+  border-radius: 5px;
+  color: white;
+}
+
+.contact-form-container input::placeholder, .contact-form-container textarea::placeholder {
+  color: white;
+  font-family: Kollektif, sans-serif;
+  opacity: 0.8;
+}
+
+.contact-form-container textarea {
+  height: 160px;
+}
+
 .about-card {
   width: 245px;
   height: 245px;
@@ -346,5 +433,19 @@ nav ul li {
 
 nav ul li:hover {
   color: #00D8FF;
+}
+
+.send-btn {
+  background: #764ABC;
+  color: white;
+  height: 35px;
+  width: 55%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  color: #764ABC;
+  background: white;
 }
 /*# sourceMappingURL=index.css.map */
