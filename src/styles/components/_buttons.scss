@@ -1,0 +1,13 @@
+.send-btn{
+    background: $color1;
+    color: white;
+    height: 35px;
+    width: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+        color: $color1;
+        background: white;
+    }
+}
