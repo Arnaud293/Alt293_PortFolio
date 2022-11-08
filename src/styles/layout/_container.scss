@@ -127,6 +127,14 @@
         justify-content: space-around;
         align-items: center;
     }
+
+    &-stack{
+        & .stack-img{
+            & img{
+                height: 65px;
+            }
+        }
+    }
 }
 
 .project-text-top-container{
@@ -164,32 +172,38 @@
     background: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 
     &-preview ,&-text-container{
         height: 60vh;
     }
 
     &-text-container{
-        width: 40%;
-        margin-left: 1rem;
-        & h3, p {
-            color: white;
-        }
-        & h2{
-            color: $color2;
-            font-size: 2.3rem;
-            line-height: 37px;
-            font-style: italic;
-            font-weight: 500;
-        }
-        & h2, p{
-            font-family: $font1;
-        }
+        width: 35%;
+        margin-right: 2rem;
+        text-align: right;
         & h3{
+            color: white;
             font-family: $font2;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            margin: 0px;
+        }
+        & h4{
+            color: rgba(255, 255, 255, 0.271);
+            font-family: $font1;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            margin: 0px;
+        }
+        & ul{
+            color: $color1;
+            font-size: 1.8rem;
+            line-height: 37px;
+            font-weight: 500;
+            font-family: $font1;
         }
     }
 
@@ -201,52 +215,29 @@
         border-radius: 20px;
     }
 
+   & .projects-scroll{
+        position: absolute;
+        font-size: 3.5rem;
+        color: rgb(184, 183, 183);
+        transition: 0.25s;
+        -webkit-user-select: none;
+        user-select: none;
+        padding: 0 14px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        & span{
+            font-family: $font1;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+   }
+
    
 }
 
-.projects-container-bis{
-    min-height: 80vh;
-    background: black;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
 
-    &-preview ,&-text-container{
-        height: 60vh;
-    }
-
-    &-preview{
-        background: $color2;
-        border-radius: 20px;
-        width: 50%;
-    }
-
-    &-text-container{
-        width: 40%;
-        text-align: right;
-        margin-right: 1rem;
-
-        & h3, p {
-            color: white;
-        }
-        & h2{
-            color: $color1;
-            font-size: 2.3rem;
-            line-height: 37px;
-            font-style: italic;
-            font-weight: 500;
-        }
-        & h2, p{
-            font-family: $font1;
-        }
-        & h3{
-            font-family: $font2;
-            font-size: 1.5rem;
-        }
-    }
-}
 
 .contact{
     min-height: 90vh;
