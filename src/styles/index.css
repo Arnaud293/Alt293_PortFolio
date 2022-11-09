@@ -339,14 +339,20 @@ li {
 .contact-icons {
   position: absolute;
   left: 4rem;
-  color: aliceblue;
-  height: 75px;
+  color: white;
   font-size: 30px;
   display: flex;
-  flex-direction: column;
-  bottom: 4rem;
-  gap: 0.5rem;
-  opacity: 0.7;
+  bottom: 1rem;
+  gap: 1.5rem;
+  opacity: 0.5;
+}
+
+.contact span {
+  color: white;
+  font-family: 'Bebas-Neue';
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
 }
 
 .about-card {
@@ -412,17 +418,67 @@ nav {
   background: black;
 }
 
+@media screen and (max-width: 420px) {
+  nav {
+    justify-content: flex-start;
+  }
+}
+
+nav .fa-solid.fa-bars {
+  color: #764ABC;
+  height: 8vh;
+  font-size: 4vh;
+  align-items: center;
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  nav .fa-solid.fa-bars {
+    display: flex;
+  }
+}
+
+nav .fa-solid.fa-bars::before {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  nav .fa-solid.fa-bars::before {
+    display: flex;
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+}
+
 nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 40%;
+  width: 400px;
+}
+
+@media screen and (max-width: 780px) {
+  nav ul {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  nav ul {
+    display: none;
+  }
 }
 
 nav ul li {
   color: #764ABC;
   font-family: Bebas-Neue, sans-serif;
   font-size: 25px;
+}
+
+@media screen and (max-width: 780px) {
+  nav ul li {
+    font-size: 18px;
+  }
 }
 
 nav ul li:hover {
