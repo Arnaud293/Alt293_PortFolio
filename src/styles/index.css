@@ -213,10 +213,23 @@ li {
 }
 
 .about-bottom-container {
-  display: flex;
-  width: 90vw;
+  display: grid;
+  min-width: 90vw;
   justify-content: space-around;
-  align-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+}
+
+@media screen and (max-width: 780px) {
+  .about-bottom-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-bottom-container {
+    grid-template-columns: 90%;
+  }
 }
 
 .about-stack .stack-img img {
@@ -424,7 +437,7 @@ li {
 }
 
 .about-card {
-  width: 245px;
+  max-width: 245px;
   height: 245px;
   border-radius: 20px;
   background: #462b73;
@@ -434,6 +447,13 @@ li {
   flex-direction: column;
   box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.1);
   margin-right: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .about-card {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }
 
 .about-card:hover {

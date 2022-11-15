@@ -160,10 +160,18 @@
     }
 
     &-bottom-container{
-        display: flex;
-        width: 90vw;
+        display: grid;
+        min-width: 90vw;
         justify-content: space-around;
-        align-items: center;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-items: center;
+
+        @media screen and(max-width: 780px){
+            grid-template-columns: 50% 50%;
+        }
+        @media screen and(max-width: 420px){
+            grid-template-columns: 90%;
+        }
     }
 
     &-stack{
