@@ -167,7 +167,7 @@
         justify-items: center;
 
         @media screen and(max-width: 780px){
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 45% 45%;
         }
         @media screen and(max-width: 420px){
             grid-template-columns: 90%;
@@ -176,8 +176,16 @@
 
     &-stack{
         & .stack-img{
+            margin-top: 2rem;
             & img{
                 height: 65px;
+
+                @media screen and(max-width: 780px){
+                    height: 50px;
+                }
+                @media screen and(max-width: 420px){
+                    height: 35px;
+                }
             }
         }
     }

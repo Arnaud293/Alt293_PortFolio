@@ -222,7 +222,7 @@ li {
 
 @media screen and (max-width: 780px) {
   .about-bottom-container {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
   }
 }
 
@@ -232,8 +232,24 @@ li {
   }
 }
 
+.about-stack .stack-img {
+  margin-top: 2rem;
+}
+
 .about-stack .stack-img img {
   height: 65px;
+}
+
+@media screen and (max-width: 780px) {
+  .about-stack .stack-img img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-stack .stack-img img {
+    height: 35px;
+  }
 }
 
 .project-text-top-container {
