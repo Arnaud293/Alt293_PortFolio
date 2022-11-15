@@ -327,14 +327,42 @@ li {
   position: relative;
 }
 
+@media screen and (max-width: 780px) {
+  .projects-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .projects-container-preview, .projects-container-text-container {
   height: 60vh;
+}
+
+@media screen and (max-width: 780px) {
+  .projects-container-preview, .projects-container-text-container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .projects-container-preview {
+    min-height: 45vh;
+    max-height: 48vh;
+  }
 }
 
 .projects-container-text-container {
   width: 35%;
   margin-right: 2rem;
   text-align: right;
+}
+
+@media screen and (max-width: 780px) {
+  .projects-container-text-container {
+    width: auto;
+    margin-right: 0;
+    text-align: center;
+  }
 }
 
 .projects-container-text-container h3 {
@@ -361,6 +389,14 @@ li {
   font-family: Kollektif, sans-serif;
 }
 
+@media screen and (max-width: 780px) {
+  .projects-container-text-container ul {
+    padding: 0;
+    font-size: 1.3rem;
+    line-height: 28px;
+  }
+}
+
 .projects-container-preview {
   width: 50%;
   background: #462b73;
@@ -372,7 +408,16 @@ li {
 }
 
 .projects-container-preview img {
-  height: 610px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 780px) {
+  .projects-container-preview {
+    width: 60%;
+    min-width: 400px;
+  }
 }
 
 .projects-container .projects-scroll {
@@ -650,6 +695,12 @@ nav ul li:hover {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .preview-btn {
+    top: 67vh;
+  }
 }
 
 .preview-btn:hover {

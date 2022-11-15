@@ -25,6 +25,10 @@
     border: none;
     cursor: pointer;
 
+    @media screen and(max-width: 780px){
+        top: 67vh;
+    }
+
     &:hover{
         background: white;
     }
