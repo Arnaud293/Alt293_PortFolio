@@ -11,3 +11,21 @@
         background: white;
     }
 }
+
+.preview-btn{
+    position: absolute;
+    top: 61vh;
+    color: $color1;
+    background: black;
+    height: 50px;
+    width: 140px;
+    border-radius: 50px;
+    font-family: $font1;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background: white;
+    }
+}

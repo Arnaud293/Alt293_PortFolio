@@ -65,6 +65,12 @@ li {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .home #js-icon img {
+    display: none;
+  }
+}
+
 .home #redux-icon img {
   position: absolute;
   bottom: 1vh;
@@ -81,6 +87,12 @@ li {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .home #redux-icon img {
+    display: none;
+  }
+}
+
 .home #react-icon img {
   position: absolute;
   top: 6vh;
@@ -93,6 +105,19 @@ li {
   .home #react-icon img {
     height: 28vh;
     opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home #react-icon img {
+    height: 25vh;
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home #react-icon img {
+    display: none;
   }
 }
 
@@ -126,6 +151,19 @@ li {
 
 .home-text-container p span {
   color: #00D8FF;
+}
+
+@media screen and (max-width: 600px) {
+  .home-text-container {
+    right: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .home-text-container p {
+    width: 80%;
+  }
 }
 
 .about {
@@ -267,6 +305,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .projects-container-preview img {
@@ -525,6 +564,24 @@ nav ul li:hover {
 
 .send-btn:hover {
   color: #764ABC;
+  background: white;
+}
+
+.preview-btn {
+  position: absolute;
+  top: 61vh;
+  color: #764ABC;
+  background: black;
+  height: 50px;
+  width: 140px;
+  border-radius: 50px;
+  font-family: Kollektif, sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.preview-btn:hover {
   background: white;
 }
 /*# sourceMappingURL=index.css.map */
