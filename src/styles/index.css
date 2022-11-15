@@ -177,7 +177,7 @@ li {
 }
 
 .about-text-container {
-  height: 35vh;
+  min-height: 35vh;
   text-align: center;
   position: relative;
   display: flex;
@@ -433,6 +433,7 @@ li {
   justify-content: center;
   flex-direction: column;
   box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
 }
 
 .about-card:hover {

@@ -126,7 +126,7 @@
     border-top: 1px solid white;
 
     &-text-container{
-        height: 35vh;
+        min-height: 35vh;
         text-align: center;
         position: relative;
         display: flex;
