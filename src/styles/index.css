@@ -420,6 +420,12 @@ li {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .projects-container-preview {
+    min-width: 250px;
+  }
+}
+
 .projects-container .projects-scroll {
   position: absolute;
   font-size: 3.5rem;
@@ -430,6 +436,13 @@ li {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 560px) {
+  .projects-container .projects-scroll {
+    position: initial;
+    justify-content: center;
+  }
 }
 
 .projects-container .projects-scroll span {
@@ -700,6 +713,18 @@ nav ul li:hover {
 @media screen and (max-width: 780px) {
   .preview-btn {
     top: 67vh;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .preview-btn {
+    top: 65vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .preview-btn {
+    top: 64vh;
   }
 }
 

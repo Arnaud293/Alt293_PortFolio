@@ -28,6 +28,12 @@
     @media screen and(max-width: 780px){
         top: 67vh;
     }
+    @media screen and(max-width: 560px){
+        top: 65vh;
+    }
+    @media screen and(max-width: 420px){
+        top: 64vh;
+    }
 
     &:hover{
         background: white;
