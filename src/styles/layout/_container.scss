@@ -146,6 +146,10 @@
             font-size: 20px;
             width: 80%;
             line-height: 1.8rem;
+
+            @media screen and(max-width: 780px){
+                font-size: 15px;
+            }
         }
 
         & .background-text{
@@ -156,6 +160,15 @@
             top: -15%;
             right: 0%;
             width: 100%;
+
+            @media screen and(max-width: 780px){
+                top: -5%;
+                font-size: 6rem;
+            }
+            @media screen and(max-width: 420px){
+                top: 0;
+                font-size: 4.5rem;
+            }
         }
     }
 
@@ -218,6 +231,14 @@
         top: 20%;
         right: 0%;
         width: 100%;
+        @media screen and(max-width: 780px){
+            top: 28%;
+            font-size: 6rem;
+        }
+        @media screen and(max-width: 420px){
+            top: 32%;
+            font-size: 4.5rem;
+        }
     }
 }
 

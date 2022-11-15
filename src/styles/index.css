@@ -202,6 +202,12 @@ li {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 780px) {
+  .about-text-container p {
+    font-size: 15px;
+  }
+}
+
 .about-text-container .background-text {
   font-family: Bebas-Neue, sans-serif;
   color: rgba(255, 255, 255, 0.2);
@@ -210,6 +216,20 @@ li {
   top: -15%;
   right: 0%;
   width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .about-text-container .background-text {
+    top: -5%;
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-text-container .background-text {
+    top: 0;
+    font-size: 4.5rem;
+  }
 }
 
 .about-bottom-container {
@@ -281,6 +301,20 @@ li {
   top: 20%;
   right: 0%;
   width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .project-text-top-container .background-text {
+    top: 28%;
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-text-top-container .background-text {
+    top: 32%;
+    font-size: 4.5rem;
+  }
 }
 
 .projects-container {
