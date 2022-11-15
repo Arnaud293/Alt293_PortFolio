@@ -58,6 +58,13 @@ li {
   height: 15vh;
 }
 
+@media screen and (max-width: 780px) {
+  .home #js-icon img {
+    height: 10vh;
+    opacity: 0.8;
+  }
+}
+
 .home #redux-icon img {
   position: absolute;
   bottom: 1vh;
@@ -66,12 +73,27 @@ li {
   height: 20vh;
 }
 
+@media screen and (max-width: 780px) {
+  .home #redux-icon img {
+    height: 15vh;
+    right: 13vh;
+    opacity: 0.8;
+  }
+}
+
 .home #react-icon img {
   position: absolute;
   top: 6vh;
   left: 0;
   opacity: 1;
   height: 35vh;
+}
+
+@media screen and (max-width: 780px) {
+  .home #react-icon img {
+    height: 28vh;
+    opacity: 0.8;
+  }
 }
 
 .home-img-container {
@@ -90,8 +112,8 @@ li {
 
 .home-text-container {
   position: absolute;
-  right: 14rem;
-  top: 10rem;
+  right: 15%;
+  top: 15%;
   z-index: 1;
 }
 
@@ -242,6 +264,13 @@ li {
   width: 50%;
   background: #462b73;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container-preview img {
+  height: 610px;
 }
 
 .projects-container .projects-scroll {

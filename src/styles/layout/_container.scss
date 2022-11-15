@@ -21,6 +21,10 @@
             right: 0;
             opacity: 1;
             height: 15vh;
+            @media screen and(max-width: 780px){
+                height: 10vh;
+                opacity: 0.8;
+            }
         }
     }
 
@@ -32,6 +36,11 @@
             right: 20vh;
             opacity: 1;
             height: 20vh;
+            @media screen and(max-width: 780px){
+                height: 15vh;
+                right: 13vh;
+                opacity: 0.8;
+            }
         }
     }
 
@@ -43,6 +52,10 @@
             left: 0;
             opacity: 1;
             height: 35vh;
+            @media screen and(max-width: 780px){
+                height: 28vh;
+                opacity: 0.8;
+            }
         }
     }
     
@@ -62,8 +75,8 @@
 
     &-text-container{
         position: absolute;
-        right: 14rem;
-        top: 10rem;
+        right: 15%;
+        top: 15%;
         z-index: 1;
         & p{
             font-family: Bebas-Neue, sans-serif;
@@ -213,6 +226,13 @@
         width: 50%;
         background: $color1-low;
         border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img{
+            height: 610px;
+        }
     }
 
    & .projects-scroll{
