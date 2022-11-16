@@ -285,6 +285,18 @@ li {
   border-bottom: 1px solid white;
 }
 
+@media screen and (max-width: 780px) {
+  .project-text-top-container {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-text-top-container {
+    height: 20vh;
+  }
+}
+
 .project-text-top-container h1, .project-text-top-container p {
   color: white;
 }
@@ -298,7 +310,7 @@ li {
   color: rgba(255, 255, 255, 0.2);
   font-size: 8rem;
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 0%;
   width: 100%;
 }
@@ -312,8 +324,8 @@ li {
 
 @media screen and (max-width: 420px) {
   .project-text-top-container .background-text {
-    top: 32%;
-    font-size: 4.5rem;
+    top: 25%;
+    font-size: 4rem;
   }
 }
 
@@ -470,6 +482,13 @@ li {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 780px) {
+  .contact-top-icons {
+    width: 70vw;
+    height: 5vh;
+  }
+}
+
 .contact-top-icons-email, .contact-top-icons-phone {
   display: flex;
   align-items: center;
@@ -477,6 +496,12 @@ li {
   flex-direction: column;
   padding: 1rem;
   font-family: Kollektif, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-top-icons-email p, .contact-top-icons-phone p {
+    display: none;
+  }
 }
 
 .contact-top-icons-email:hover, .contact-top-icons-phone:hover {
@@ -490,6 +515,12 @@ li {
   font-size: 25px;
 }
 
+@media screen and (max-width: 780px) {
+  .contact-top-icons i {
+    font-size: 30px;
+  }
+}
+
 .contact-form-container {
   display: flex;
   align-items: center;
@@ -498,6 +529,12 @@ li {
   width: 45vw;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 780px) {
+  .contact-form-container {
+    width: 70vw;
+  }
 }
 
 .contact-form-container label {
@@ -536,12 +573,26 @@ li {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 420px) {
+  .contact-icons {
+    position: initial;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .contact span {
   color: white;
   font-family: 'Bebas-Neue';
   position: absolute;
   bottom: 1rem;
   right: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+  .contact span {
+    position: initial;
+  }
 }
 
 .about-card {

@@ -216,6 +216,13 @@
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 
+    @media screen and(max-width: 780px){
+        height: 30vh;
+    }
+    @media screen and(max-width: 420px){
+        height: 20vh;
+    }
+
     & h1, p{
         color: white;
     }
@@ -228,7 +235,7 @@
         color: rgba(255, 255, 255, 0.2);
         font-size: 8rem;
         position: absolute;
-        top: 20%;
+        top: 25%;
         right: 0%;
         width: 100%;
         @media screen and(max-width: 780px){
@@ -236,8 +243,8 @@
             font-size: 6rem;
         }
         @media screen and(max-width: 420px){
-            top: 32%;
-            font-size: 4.5rem;
+            top: 25%;
+            font-size: 4rem;
         }
     }
 }
@@ -378,6 +385,12 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        @media screen and(max-width: 780px){
+            width: 70vw;
+            height: 5vh;
+        }
+
         &-email, &-phone{
             display: flex;
             align-items: center;
@@ -385,6 +398,11 @@
             flex-direction: column;
             padding: 1rem;
             font-family: $font1;
+            & p{
+                @media screen and(max-width: 480px){
+                    display: none;
+                }
+            }
 
             &:hover{
                 background: $color1;
@@ -396,6 +414,9 @@
 
         & i{
             font-size: 25px;
+            @media screen and(max-width: 780px){
+                font-size: 30px;
+            }
         }
     }
 
@@ -407,6 +428,9 @@
         width: 45vw;
         gap: 1rem;
         margin-top: 2rem;
+        @media screen and(max-width: 780px){
+            width: 70vw;
+        }
 
         & label{
             color: white;
@@ -440,6 +464,11 @@
         bottom: 1rem;
         gap: 1.5rem;
         opacity: 0.5;
+        @media screen and(max-width: 420px){
+            position: initial;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     }
     & span{
         color: white;
@@ -447,5 +476,8 @@
         position: absolute;
         bottom: 1rem;
         right: 2rem;
+        @media screen and(max-width: 420px){
+            position: initial;
+        }
     }
 }
