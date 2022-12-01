@@ -1,26 +1,25 @@
 @font-face {
-    font-family: "Bebas-Neue";
-    src: url(/src/assets/BebasNeue-Regular.ttf);
-}
-@font-face {
-    font-family: "Kollektif";
-    src: url(/src/assets/Kollektif-Bold.ttf);
-    src: url(/src/assets/Kollektif-BoldItalic.ttf);
-    src: url(/src/assets/Kollektif-Italic.ttf);
-    src: url(/src/assets/Kollektif.ttf);
+    font-family: "Krona-one";
+    src: url(/src/assets/KronaOne-Regular.ttf);
 }
 
-$font1 : Kollektif, sans-serif;
-$font2 : Bebas-Neue, sans-serif;
+$font1 : Krona-one, sans-serif;
 
+// Main colors for blocs
 
-$color1 : #764ABC;
-$color2 : #00D8FF;
-$color3 : #f3f2f2;
+$color1 : #9200EB;
+$color2 : #393939;
 
-$color1-low: #462b73;
+// Main color var with tranparency
 
-$font-color1: white;
+$color1-low: rgba(146, 0, 235, 0.5);
+$color2-low: rgba(57, 57, 57, 0.8);
+
+// Main color for fonts
+
+$font-color1 : #FFFFFF;
+$font-color2 : #D4D4D4;
+
 
 html, body{
     margin: 0;
@@ -34,7 +33,7 @@ html, body{
         background: black;
     }
     &::-webkit-scrollbar-thumb {
-        background: #462b73;
+        background: $color1-low;
         border-radius: 5px;
     }
 
