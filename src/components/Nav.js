@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import ProfilPicture from '../assets/img/Arnaud.png';
 
 const Nav = () => {
@@ -12,9 +13,15 @@ const Nav = () => {
             </div>
             <div className="nav-infos-right">
                 <ul>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <NavLink to='/about'>
+                        <li>About</li>
+                    </NavLink>
+                    <NavLink to='/projects'>
+                        <li>Projects</li>
+                    </NavLink>
+                    <NavLink to='/contact'>
+                        <li>Contact</li>
+                    </NavLink>
                 </ul>
             </div>
         </div>
