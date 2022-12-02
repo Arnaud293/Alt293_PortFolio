@@ -5,12 +5,17 @@ import ProfilPicture from '../assets/img/Arnaud.png';
 const Nav = () => {
     return (
         <div className='nav'>
+            
             <div className="nav-infos-left">
-                <p>Arnaud Le Tallec</p>
+                <NavLink to='/'>
+                    <p>Arnaud Le Tallec</p>
+                </NavLink>
                 <div className="nav-infos-left-img">
                     <img src={ProfilPicture} alt="" />
                 </div>
+                
             </div>
+            
             <div className="nav-infos-right">
                 <ul>
                     <NavLink to='/about'>

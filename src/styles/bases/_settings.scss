@@ -44,3 +44,11 @@ html, body{
 li{
     list-style-type: none;
 }
+
+a.active{
+    color: $color1;
+}
+a{
+    text-decoration: none;
+    color: $font-color2;
+}

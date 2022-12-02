@@ -28,6 +28,15 @@ li {
   list-style-type: none;
 }
 
+a.active {
+  color: #9200EB;
+}
+
+a {
+  text-decoration: none;
+  color: #D4D4D4;
+}
+
 .home {
   display: grid;
   background: black;
