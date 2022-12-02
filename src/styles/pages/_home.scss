@@ -1,0 +1,14 @@
+.home{
+    display: grid;
+    background: black;
+    grid-template-columns: 13vh 1fr;
+
+    &-cards-container{
+        display: flex ;
+        justify-content: space-evenly;
+        padding: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+}

@@ -8,6 +8,7 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   font-family: Krona-one, sans-serif;
+  box-sizing: border-box;
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
@@ -27,8 +28,48 @@ li {
   list-style-type: none;
 }
 
+.home {
+  display: grid;
+  background: black;
+  grid-template-columns: 13vh 1fr;
+}
+
+.home-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.home-cards-top {
+  background: #393939;
+  width: 40vw;
+  height: 44vh;
+  border-radius: 30px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.home-cards-bottom {
+  background: #393939;
+  width: 82vw;
+  height: 50vh;
+  border-radius: 30px;
+  margin-top: 2rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
 .nav {
-  height: 10vh;
+  height: 8vh;
   background: black;
   color: #D4D4D4;
   display: flex;
@@ -44,9 +85,10 @@ li {
 }
 
 .nav-infos-left-img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+  margin-left: 2ch;
 }
 
 .nav-infos-left-img img {
@@ -63,5 +105,27 @@ li {
 .nav-infos-right ul {
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: #FFFFFF;
+}
+
+.dynamic-text {
+  color: #393939;
+  word-break: break-word;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.dynamic-text span {
+  font-size: 5.5rem;
+  height: 100%;
+  transform: rotate(90deg);
 }
 /*# sourceMappingURL=index.css.map */

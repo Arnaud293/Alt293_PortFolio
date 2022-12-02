@@ -1,0 +1,12 @@
+.dynamic-text{
+    color: $color2;
+    word-break: break-word;
+    text-align: center;
+    margin-left: 1rem;
+
+    & span{
+        font-size: 5.5rem ;
+        height: 100%;
+        transform: rotate(90deg);
+    }
+}
