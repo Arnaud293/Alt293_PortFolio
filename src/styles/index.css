@@ -7,6 +7,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: Krona-one, sans-serif;
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
@@ -24,5 +25,43 @@ html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
 
 li {
   list-style-type: none;
+}
+
+.nav {
+  height: 10vh;
+  background: black;
+  color: #D4D4D4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-infos-left {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-infos-left-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav-infos-left-img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.nav-infos-right {
+  width: 40%;
+}
+
+.nav-infos-right ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 /*# sourceMappingURL=index.css.map */
