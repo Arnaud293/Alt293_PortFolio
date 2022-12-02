@@ -20,9 +20,9 @@ const Home = () => {
                     <p>View my work 👀</p>
                 </div>
             </div>
-            
+            <Footer />
         </div>
-        <Footer />
+        
         </>
     );
 };

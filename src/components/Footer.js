@@ -3,7 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='footer'>
-            footer
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </div>
     );
 };

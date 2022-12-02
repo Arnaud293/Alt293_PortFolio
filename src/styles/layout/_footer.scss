@@ -4,5 +4,9 @@
     justify-content: center;
     align-items: center;
     background: black;
-    color: $font-color1;
+    color: $font-color2;
+    font-size: 50px;
+    gap: 15px;
+    padding-bottom: 1rem;
+    grid-column-start: 2;
 }

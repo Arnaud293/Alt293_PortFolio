@@ -3,6 +3,8 @@
     word-break: break-word;
     text-align: center;
     margin-left: 1rem;
+    max-height: 115vh;
+    overflow: hidden;
 
     & span{
         font-size: 5.5rem ;

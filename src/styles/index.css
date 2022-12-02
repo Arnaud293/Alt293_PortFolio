@@ -113,7 +113,11 @@ li {
   justify-content: center;
   align-items: center;
   background: black;
-  color: #FFFFFF;
+  color: #D4D4D4;
+  font-size: 50px;
+  gap: 15px;
+  padding-bottom: 1rem;
+  grid-column-start: 2;
 }
 
 .dynamic-text {
@@ -121,6 +125,8 @@ li {
   word-break: break-word;
   text-align: center;
   margin-left: 1rem;
+  max-height: 115vh;
+  overflow: hidden;
 }
 
 .dynamic-text span {
