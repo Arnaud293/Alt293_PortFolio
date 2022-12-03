@@ -1,14 +1,24 @@
 .dynamic-text{
     color: $color2;
-    word-break: break-word;
     text-align: center;
-    margin-left: 1rem;
-    max-height: 115vh;
-    overflow: hidden;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 1rem;
+    
 
-    & span{
-        font-size: 5.5rem ;
-        height: 100%;
-        transform: rotate(90deg);
+    &-content{
+        
+        font-size: 4rem ;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
+        white-space: nowrap;
+        border-bottom: 4px solid $color1-low;
+        animation: 
+            typing 3.5s steps(15),
+            blink .5s linear infinite;
+        
     }
 }

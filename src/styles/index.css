@@ -7,7 +7,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: Krona-one, sans-serif;
+  font-family: Krona-one, monospace;
   box-sizing: border-box;
 }
 
@@ -131,16 +131,39 @@ a {
 
 .dynamic-text {
   color: #393939;
-  word-break: break-word;
   text-align: center;
-  margin-left: 1rem;
-  max-height: 115vh;
-  overflow: hidden;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 1rem;
 }
 
-.dynamic-text span {
-  font-size: 5.5rem;
-  height: 100%;
-  transform: rotate(90deg);
+.dynamic-text-content {
+  font-size: 4rem;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  white-space: nowrap;
+  border-bottom: 4px solid rgba(146, 0, 235, 0.5);
+  animation: typing 3.5s steps(15), blink 0.5s linear infinite;
+}
+
+@keyframes typing {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(146, 0, 235, 0.5);
+  }
 }
 /*# sourceMappingURL=index.css.map */

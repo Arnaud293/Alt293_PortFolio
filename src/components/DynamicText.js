@@ -1,9 +1,11 @@
 import React from 'react';
 
 const DynamicText = () => {
+
+    
     return (
         <div className='dynamic-text'>
-            <span>React Developer</span>
+            <span className='dynamic-text-content'>React Developer</span>
         </div>
     );
 };

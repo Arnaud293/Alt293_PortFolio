@@ -1,0 +1,9 @@
+@keyframes typing {
+    from { height: 0%}
+    to { height: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: $color1-low }
+  }
