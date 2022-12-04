@@ -1,0 +1,35 @@
+.about{
+    background: black;
+    color: $font-color1;
+
+    &-container{
+        display: flex;
+        height: 92vh;
+        align-items: center;
+        justify-content: center;
+
+        &-left{
+            width: 35%;
+            height: 75%;
+
+            & img{
+                width: 350px;
+                height: 470px;
+                object-fit: fill;
+                border-radius: 30px;
+            }
+        }
+
+        &-right{
+            width: 50%;
+
+            & p {
+                line-height: 30px;
+                font-size: 20px;
+               & span{
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
