@@ -116,6 +116,10 @@ a {
   justify-content: space-evenly;
 }
 
+.nav-infos-right ul li:hover {
+  color: #D4D4D4;
+}
+
 .footer {
   width: 100%;
   display: flex;

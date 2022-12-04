@@ -31,6 +31,9 @@
         & ul{
             display: flex;
             justify-content: space-evenly;
+            & li:hover{
+                color: $font-color2;
+            }
         }
     }
 }
