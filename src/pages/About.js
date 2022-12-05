@@ -9,6 +9,7 @@ import ReactIc from '../assets/img/react.png';
 import ReduxIc from '../assets/img/redux.png';
 import SassIc from '../assets/img/sass.png';
 import FirebaseIc from '../assets/img/firebase.png';
+import Footer from '../components/Footer';
 
 const About = () => {
     return (
@@ -35,6 +36,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };
