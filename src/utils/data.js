@@ -39,5 +39,20 @@ export const data = [
         id: 8,
         title : "",
         img: '../assets/img/groupo.png',
+    },
+    {
+        id: 9,
+        title : "",
+        img: '../assets/img/groupo.png',
+    },
+    {
+        id: 10,
+        title : "",
+        img: '../assets/img/groupo.png',
+    },
+    {
+        id: 11,
+        title : "",
+        img: '../assets/img/groupo.png',
     }
 ]

@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import ProjectCard from '../components/ProjectCard';
 
 // SRC
+import Footer from '../components/Footer';
 import {data} from '../utils/data';
 console.log(data)
 
@@ -21,7 +22,7 @@ const Projects = () => {
                     <ProjectCard key={project.id} projectData={project}/>
                 ))}
             </div>
-            
+            <Footer />
         </div>
     );
 };

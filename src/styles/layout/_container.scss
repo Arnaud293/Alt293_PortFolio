@@ -13,4 +13,10 @@
     padding: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    height: 69vh;
+    overflow: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
