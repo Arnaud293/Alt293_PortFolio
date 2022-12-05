@@ -1,11 +1,27 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import ProjectCard from '../components/ProjectCard';
+
+// SRC
+import {data} from '../utils/data';
+console.log(data)
 
 const Projects = () => {
     return (
-        <div>
+        <div className='projects'>
             <Nav />
-            PROJECTS
+            <div className="btn-container">
+                <button className='projects-sort-btn'>React</button>
+                <button className='projects-sort-btn'>Redux</button>
+                <button className='projects-sort-btn'>Fullstack</button>
+                <button className='projects-sort-btn'>Integration</button>
+            </div>
+            <div className="projects-container">
+                {data.map((project) =>(
+                    <ProjectCard key={project.id} projectData={project}/>
+                ))}
+            </div>
+            
         </div>
     );
 };
