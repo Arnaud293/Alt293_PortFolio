@@ -1,0 +1,13 @@
+.projects-sort-btn{
+    width: 125px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: $font1;
+    font-size: 15px;
+
+    &:active{
+        background: $color1;
+        color: $font-color1;
+    }
+}

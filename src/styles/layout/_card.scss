@@ -109,3 +109,19 @@
         }
     }
 }
+
+.project-card{
+    height: 250px;
+    width: 350px;
+    background: $color2;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+}

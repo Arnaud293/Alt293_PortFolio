@@ -98,6 +98,27 @@ a {
   color: #9200EB;
 }
 
+.projects {
+  background: black;
+}
+
+.btn-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .home-cards-top {
   background: #393939;
   width: 40vw;
@@ -208,6 +229,22 @@ a {
   height: 85px;
 }
 
+.project-card {
+  height: 250px;
+  width: 350px;
+  background: #393939;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
 .nav {
   height: 8vh;
   background: black;
@@ -262,6 +299,20 @@ a {
   gap: 15px;
   padding-bottom: 1rem;
   grid-column-start: 2;
+}
+
+.projects-sort-btn {
+  width: 125px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: Krona-one, monospace;
+  font-size: 15px;
+}
+
+.projects-sort-btn:active {
+  background: #9200EB;
+  color: #FFFFFF;
 }
 
 .dynamic-text {
