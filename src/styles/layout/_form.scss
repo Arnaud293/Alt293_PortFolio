@@ -9,17 +9,25 @@
         height: 100%;
         width: 245px;
         color: $font-color1;
-        & p{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $color1-low;
-        height: 7vh;
-        border-radius: 30px;
-        font-size: 14px;
-        } 
+        flex-direction: column;
+        justify-content: space-between;
+        &-text{
+            background: $color1-low;
+            height: 7vh;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            & p{
+                font-size: 12px;
+                font-family: $font1;
+            } 
+        }
+        
         &-resume{
-            height: 67%;
+            height: 100%;
             width: 100%;
             border-radius: 30px;
             position: relative;

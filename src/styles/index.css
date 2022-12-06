@@ -330,20 +330,28 @@ a {
   height: 100%;
   width: 245px;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.form-container-left p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.form-container-left-text {
   background: rgba(146, 0, 235, 0.5);
   height: 7vh;
   border-radius: 30px;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.form-container-left-text p {
+  font-size: 12px;
+  font-family: Krona-one, monospace;
 }
 
 .form-container-left-resume {
-  height: 67%;
+  height: 100%;
   width: 100%;
   border-radius: 30px;
   position: relative;
