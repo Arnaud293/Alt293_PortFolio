@@ -37,8 +37,12 @@ export const ContactUs = () => {
     return (
       <div className="form-container">
             <div className="form-container-left" >
-                <p>06 06 45 72 15</p>
-                <p>arnaudlt293@gmail.com</p>
+                <div className='form-container-left-text' onClick={()=>{navigator.clipboard.writeText("06 06 45 72 15"); alert('Numéro copié dans le presse-papier')}}>
+                    <p>06 06 45 72 15</p>
+                </div>
+                <div className='form-container-left-text' onClick={()=>{navigator.clipboard.writeText("arnaudlt293@gmail.com"); alert('Email copié dans le presse-papier')}}>
+                    <p>arnaudlt293@gmail.com</p>
+                </div>
                 <NavLink to={ResumePdf} target='_blank' rel='noopener noreferrer'>
                     <div className="form-container-left-resume" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                         <img src={ResumePreview} alt="resume-arnaud" />
