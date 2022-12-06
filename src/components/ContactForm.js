@@ -3,10 +3,15 @@ import emailjs from '@emailjs/browser';
 
 // SRC
 import ResumePreview from '../assets/img/resume.png'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import ResumePdf from '../assets/CV_Arnaud_LeTallec_JSDeveloper.pdf';
 
 export const ContactUs = () => {
     const form = useRef();
-  
+    
+    const [isShown, setIsShown] = useState(false);
+
     const sendEmail = (e) => {
       e.preventDefault();
       const formMess = document.querySelector('.form-message');
@@ -31,12 +36,17 @@ export const ContactUs = () => {
   
     return (
       <div className="form-container">
-            <div className="form-container-left">
+            <div className="form-container-left" >
                 <p>06 06 45 72 15</p>
                 <p>arnaudlt293@gmail.com</p>
-                <div className="form-container-left-resume">
-                    <img src={ResumePreview} alt="resume-arnaud" />
-                </div>
+                <NavLink to={ResumePdf} target='_blank' rel='noopener noreferrer'>
+                    <div className="form-container-left-resume" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                        <img src={ResumePreview} alt="resume-arnaud" />
+                        {isShown && (
+                            <i class="fa-solid fa-eye"></i>
+                        )}
+                    </div>
+                </NavLink>
             </div>
             <div className="form-container-right">
                 <form ref={form} onSubmit={sendEmail}>
@@ -46,7 +56,7 @@ export const ContactUs = () => {
                     <input type="email" name="email" required autoComplete='off'/>
                     <label>Message</label>
                     <textarea name="message" required />
-                    <input type="submit" value="Envoyer" />
+                    <input type="submit" value="Send" id='send-btn' />
                 </form>
                 <div className="form-message">
   

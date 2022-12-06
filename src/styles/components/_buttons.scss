@@ -11,3 +11,9 @@
         color: $font-color1;
     }
 }
+#send-btn{
+    background: $color1-low;
+    font-family: $font1;
+    border-radius: 30px 3px 30px 30px;
+    cursor: pointer;
+}
