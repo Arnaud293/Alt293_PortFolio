@@ -1,0 +1,9 @@
+.contact{
+    background: black;
+    height: 100vh;
+    &-title{
+        color: $color2;
+        font-size: 40px;
+        text-align: center;
+    }
+}

@@ -102,6 +102,17 @@ a {
   background: black;
 }
 
+.contact {
+  background: black;
+  height: 100vh;
+}
+
+.contact-title {
+  color: #393939;
+  font-size: 40px;
+  text-align: center;
+}
+
 .btn-container {
   height: 70px;
   width: 100%;
@@ -305,6 +316,78 @@ a {
   gap: 15px;
   padding-bottom: 1rem;
   grid-column-start: 2;
+}
+
+.form-container {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-container-left {
+  height: 100%;
+  width: 21%;
+}
+
+.form-container-left p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: rgba(146, 0, 235, 0.5);
+  height: 7vh;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.form-container-left-resume {
+  height: 67%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.form-container-left-resume img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.form-container-right {
+  background: rgba(57, 57, 57, 0.8);
+  border-radius: 30px;
+  height: 100%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 80%;
+  color: #FFFFFF;
+}
+
+.form-container-right form input, .form-container-right form textarea {
+  background: black;
+  border: none;
+  border-radius: 30px;
+  resize: none;
+  color: #FFFFFF;
+}
+
+.form-container-right form input {
+  height: 5vh;
+}
+
+.form-container-right form textarea {
+  height: 20vh;
 }
 
 .projects-sort-btn {
