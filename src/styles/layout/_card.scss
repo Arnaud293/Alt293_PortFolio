@@ -115,13 +115,47 @@
     width: 350px;
     background: #39393959;
     border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.86,0,0.07,1);
+    color: white;
+    font-weight: bold;
+    perspective : 2000px;
+    perspective-origin: top;
 
-    & img{
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
+    &:hover{
+        transform: rotateY(180deg);
     }
+
+    &-front{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img{
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+    }
+    &-front, &-back{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        // padding: 30px;
+        border-radius: 30px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    &-back{
+        background: #39393959;
+        transform: rotateY(180deg);
+        & img{
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+    }
+
+   
 }

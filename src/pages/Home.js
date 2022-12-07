@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 // SRC
 import ProfilPic from '../assets/img/me.webp';
 import CallPic from '../assets/img/call.jpg';
-import KanapPreview from '../assets/img/Kanap.png';
+import KanapPreview from '../assets/img/kanap.png';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {

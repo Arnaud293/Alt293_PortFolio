@@ -4,7 +4,13 @@ const ProjectCard = ({projectData, key}) => {
     
     return (
         <div className='project-card'>
-            <img src={projectData.img} alt="" />
+            <div className="project-card-front">
+                <img src={projectData.img} alt="project-image" />
+            </div>
+            <div className="project-card-back">
+                <h1>{projectData.title}</h1>
+                <img src={projectData.imgBack} alt={projectData.alt} />
+            </div>
         </div>
     );
 };
