@@ -17,3 +17,13 @@
     border-radius: 30px 3px 30px 30px;
     cursor: pointer;
 }
+.active-btn{
+    width: 125px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-family: $font1;
+    font-size: 15px;
+    background: $color1;
+    color: $font-color1;
+}

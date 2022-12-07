@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectCard = ({projectData, key}) => {
+const ProjectCard = ({projectData}) => {
     
     return (
         <div className='project-card'>
@@ -8,8 +8,10 @@ const ProjectCard = ({projectData, key}) => {
                 <img src={projectData.img} alt="project-image" />
             </div>
             <div className="project-card-back">
-                <h1>{projectData.title}</h1>
-                <img src={projectData.imgBack} alt={projectData.alt} />
+                <div className="project-card-back-content">
+                    <h1>{projectData.title}</h1>
+                    <img src={projectData.imgBack} alt={projectData.alt} />
+                </div>
             </div>
         </div>
     );
