@@ -86,6 +86,13 @@ a {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 .about-container-left {
   width: 29%;
   height: 100%;
@@ -94,11 +101,26 @@ a {
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 980px) {
+  .about-container-left {
+    width: auto;
+  }
+}
+
 .about-container-left img {
   width: 350px;
   height: 470px;
   object-fit: fill;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .about-container-left img {
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
 
 .about-container-right {
@@ -110,8 +132,20 @@ a {
   font-size: 20px;
 }
 
+@media screen and (max-width: 980px) {
+  .about-container-right p {
+    text-align: center;
+  }
+}
+
 .about-container-right p span {
   color: #9200EB;
+}
+
+@media screen and (max-width: 980px) {
+  .about-container-right h1 {
+    text-align: center;
+  }
 }
 
 .projects {
@@ -155,7 +189,6 @@ a {
 .home-cards-top {
   background: #393939;
   width: 40vw;
-  min-width: 400px;
   height: 44vh;
   border-radius: 30px;
   color: #FFFFFF;
@@ -172,6 +205,12 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .home-cards-top {
+    font-size: 20px;
+  }
+}
+
 .home-cards-top-about-reverse {
   width: 100%;
   height: 100%;
@@ -184,6 +223,12 @@ a {
   width: 60%;
   bottom: 0;
   left: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .home-cards-top-about-reverse p {
+    font-size: 20px;
+  }
 }
 
 .home-cards-top-profil-picture {
@@ -210,6 +255,12 @@ a {
   left: 15px;
 }
 
+@media screen and (max-width: 500px) {
+  .home-cards-top-contact-reverse p {
+    font-size: 20px;
+  }
+}
+
 .home-cards-top-contact-reverse img {
   width: 100%;
   height: 60%;
@@ -234,6 +285,12 @@ a {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  .home-cards-top-work-reverse {
+    font-size: 20px;
+  }
+}
+
 .home-cards-bottom {
   background: #393939;
   width: 82vw;
@@ -253,6 +310,12 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .home-cards-bottom {
+    font-size: 20px;
+  }
+}
+
 .stack-card {
   width: 100%;
   height: 30vh;
@@ -261,6 +324,12 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 980px) {
+  .stack-card {
+    background: none;
+  }
 }
 
 .stack-card ul {
