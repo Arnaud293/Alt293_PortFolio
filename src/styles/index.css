@@ -43,6 +43,14 @@ a {
   grid-template-columns: 13vh 1fr;
 }
 
+@media screen and (max-width: 980px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .home-cards-container {
   display: flex;
   justify-content: space-evenly;
@@ -50,6 +58,14 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
+}
+
+@media screen and (max-width: 980px) {
+  .home-cards-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .about {
@@ -139,6 +155,7 @@ a {
 .home-cards-top {
   background: #393939;
   width: 40vw;
+  min-width: 400px;
   height: 44vh;
   border-radius: 30px;
   color: #FFFFFF;
@@ -146,6 +163,13 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .home-cards-top {
+    width: 82vw;
+    margin-bottom: 1rem;
+  }
 }
 
 .home-cards-top-about-reverse {
@@ -221,6 +245,12 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .home-cards-bottom {
+    margin-top: 0;
+  }
 }
 
 .stack-card {
@@ -323,10 +353,24 @@ a {
   padding: 1rem;
 }
 
+@media screen and (max-width: 650px) {
+  .nav {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
 .nav-infos-left {
   width: 60%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-infos-left {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .nav-infos-left-img {
@@ -345,15 +389,49 @@ a {
 
 .nav-infos-right {
   width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-infos-right {
+    width: 100%;
+  }
 }
 
 .nav-infos-right ul {
   display: flex;
   justify-content: space-evenly;
+  gap: 1ch;
 }
 
 .nav-infos-right ul li:hover {
   color: #D4D4D4;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-infos-right ul {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.nav i {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .nav i {
+    display: block;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
 }
 
 .footer {
@@ -505,6 +583,12 @@ a {
   height: 100%;
   margin-left: 1rem;
   padding-top: 2rem;
+}
+
+@media screen and (max-width: 980px) {
+  .dynamic-text {
+    display: none;
+  }
 }
 
 .dynamic-text-content {

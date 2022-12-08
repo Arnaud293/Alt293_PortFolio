@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import ProfilPicture from '../assets/img/Arnaud.png';
 
@@ -28,7 +28,9 @@ const Nav = () => {
                         <li>Contact</li>
                     </NavLink>
                 </ul>
+                
             </div>
+            <i class="fa-solid fa-bars"></i>
         </div>
     );
 };
