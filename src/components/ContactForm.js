@@ -58,7 +58,7 @@ export const ContactUs = () => {
       <div className="form-container">
             <div className="form-container-left" >
                 <div className="form-container-left-content">
-                    <div className='form-container-left-content-text' onClick={()=>{navigator.clipboard.writeText("06 06 45 72 15"); alert('Numéro copié dans le presse-papier')}}>
+                    <div className='form-container-left-content-text' onClick={()=>{navigator.clipboard.writeText('06 06 45 72 15'); alert('Numéro copié dans le presse-papier')}}>
                         <p>06 06 45 72 15</p>
                     </div>
                     <div className='form-container-left-content-text' onClick={()=>{navigator.clipboard.writeText("arnaudlt293@gmail.com"); alert('Email copié dans le presse-papier')}}>

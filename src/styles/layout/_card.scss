@@ -132,6 +132,7 @@
         & li img{
             width: 85px;
             height: 85px;
+            animation: appearing 2s;
             @media screen and(max-width: 500px){
                 width: 65px;
                 height: 65px;
@@ -156,6 +157,7 @@
     font-weight: bold;
     perspective : 2000px;
     perspective-origin: top;
+    animation: appearing 3s;
 
     &:hover{
         transform: rotateY(180deg);

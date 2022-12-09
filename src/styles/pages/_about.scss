@@ -21,6 +21,7 @@
             display: flex;
             align-items: center;
             margin-right: 1rem;
+            animation: fromBlurToClear 2s;
             @media screen and(max-width: 980px){
                 width: auto;
             }
