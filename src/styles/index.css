@@ -678,6 +678,20 @@ a {
   font-size: 15px;
 }
 
+@media screen and (max-width: 780px) {
+  .projects-sort-btn {
+    font-size: 12px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-sort-btn {
+    font-size: 8px;
+    width: 70px;
+  }
+}
+
 .projects-sort-btn:active {
   background: #9200EB;
   color: #FFFFFF;
@@ -699,6 +713,20 @@ a {
   font-size: 15px;
   background: #9200EB;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 780px) {
+  .active-btn {
+    font-size: 12px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .active-btn {
+    font-size: 8px;
+    width: 70px;
+  }
 }
 
 .dynamic-text {
