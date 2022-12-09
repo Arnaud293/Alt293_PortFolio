@@ -107,6 +107,12 @@ a {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .about-container-left {
+    margin-right: 0;
+  }
+}
+
 .about-container-left img {
   width: 350px;
   height: 470px;
@@ -123,8 +129,27 @@ a {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .about-container-left img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
 .about-container-right {
   width: 50%;
+}
+
+@media screen and (max-width: 680px) {
+  .about-container-right {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-container-right {
+    width: 80%;
+  }
 }
 
 .about-container-right p {
@@ -138,6 +163,12 @@ a {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .about-container-right p {
+    font-size: 15px;
+  }
+}
+
 .about-container-right p span {
   color: #9200EB;
 }
@@ -145,6 +176,18 @@ a {
 @media screen and (max-width: 980px) {
   .about-container-right h1 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-container-right h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-container-right h2 {
+    font-size: 20px;
   }
 }
 
@@ -338,11 +381,26 @@ a {
   height: 50%;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0;
 }
 
 .stack-card ul li img {
   width: 85px;
   height: 85px;
+}
+
+@media screen and (max-width: 500px) {
+  .stack-card ul li img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .stack-card ul li img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .project-card {

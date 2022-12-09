@@ -24,6 +24,9 @@
             @media screen and(max-width: 980px){
                 width: auto;
             }
+            @media screen and(max-width: 380px){
+                margin-right: 0;
+            }
 
             & img{
                 width: 350px;
@@ -36,17 +39,30 @@
                     border-radius: 50%;
                     object-fit: cover;
                 }
+                @media screen and(max-width: 380px){
+                    width: 260px;
+                    height: 260px;
+                }
             }
         }
 
         &-right{
             width: 50%;
+            @media screen and(max-width: 680px){
+                width: 70%;
+            }
+            @media screen and(max-width: 380px){
+                width: 80%;
+            }
 
             & p {
                 line-height: 30px;
                 font-size: 20px;
                 @media screen and(max-width: 980px){
                     text-align: center;
+                }
+                @media screen and(max-width: 380px){
+                    font-size: 15px;
                 }
                 
                & span{
@@ -56,6 +72,14 @@
             & h1{
                 @media screen and(max-width: 980px){
                     text-align: center;
+                }
+                @media screen and(max-width: 380px){
+                    font-size: 25px;
+                }
+            }
+            & h2{
+                @media screen and(max-width: 380px){
+                    font-size: 20px;
                 }
             }
 
