@@ -66,18 +66,18 @@ export const ContactUs = () => {
                     </div>
                 </div>
                 <NavLink to={ResumePdf} target='_blank' rel='noopener noreferrer'>
-                    {resumeResponsive === false ? (
+                    {resumeResponsive === false && (
                     <div className="form-container-left-resume" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                         <img src={ResumePreview} alt="resume-arnaud" />
                         {isShown && (
                             <i class="fa-solid fa-eye"></i>
                         )}
-                    </div>
-                    ):(
+                    </div>)}
+                    { window.innerWidth < 500 && (
                         <div className='form-container-left-content-text'>
                             <p>View resume ... <i className="fa-solid fa-download"></i></p>
-                        </div>
-                    )}
+                        </div>)}
+                    
                 </NavLink>
 
             </div>
