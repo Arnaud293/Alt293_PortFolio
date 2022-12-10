@@ -14,18 +14,21 @@ export const data = [
         id: 2,
         title : "title 2",
         img: '../assets/img/groupo.png',
+        imgBack: './assets/img/theresto.png',
         stack : ["EVERY"],
     },
     {
         id: 3,
         title : "title3",
         img: '../assets/img/groupo.png',
+        imgBack: './assets/img/panthere.png',
         stack : ["REACT", "EVERY"],
     },
     {
         id: 4,
         title : "title4",
         img: '../assets/img/groupo.png',
+        imgBack: './assets/img/ohmyfood.png',
         stack : ["EVERY"],
     },
     {
